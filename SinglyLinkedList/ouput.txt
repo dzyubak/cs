@@ -1,0 +1,92 @@
+-3 2 30 -3
+Number of elements added: 2
+Number of elements added: 1
+-3 100 2 300 30 -3 100
+
+  100
+   -3
+   30
+  300
+    2
+  100
+   -3
+
+300 100 100 30 2 -3 -3
+
+min value (list2[0, 5]): -3
+min value (list2[5, 5]): -3
+min value (list2[2, 2]): 100
+Warning! Index swapping has taken place.
+min value (list2[4, 2]): 2
+
+300 100 100 30 2 -3 -3
+-3 -3 2 30 100 100 300
+
+   -3
+   -3
+    2
+   30
+  100
+  100
+  300
+
+-30 77 300 100 100 30 2 -3 -3 20 9 9 3 -5 30 11 -8 -7 9 -9 35 0 -10 -20 7 -30
+
+Copying "list" to "list2" using constructor.
+
+Number of negative elements that have been removed: 10
+77 300 100 100 30 2 20 9 9 3 30 11 9 35 0 7
+
+Removing element(s) by value "9". Number of removed elements: 3
+Removing element(s) by value "99". Number of removed elements: 0
+
+77 300 100 100 30 2 20 3 30 11 35 0 7
+7 0 35 11 30 3 20 2 30 100 100 300 77
+
+    7
+    0
+   35
+   11
+   30
+    3
+   20
+    2
+   30
+  100
+  100
+  300
+   77
+
+
+Sort Descending: 300 100 100 77 35 30 30 20 11 7 3 2 0
+
+list: 300 100 100 77 35 30 30 20 11 7 3 2 0
+list2: -30 77 300 100 100 30 2 -3 -3 20 9 9 3 -5 30 11 -8 -7 9 -9 35 0 -10 -20 7 -30
+
+min value (list2[2, 5]): 30
+min value (list2[2, 2]): 300
+min value (list2[3, 1]):
+Warning! Index swapping has taken place.
+77
+
+-8 -7 -9
+Number of negative elements that have been removed: 3
+The list is empty.
+
+getElementByReference: 7
+getIndexByReference: 7
+getElementByReference: 9
+getIndexByReference: 10
+list4: 5 5 5 1 5 5 5 8 3 7 11 2 9 5 5 5
+Number of negative elements that have been removed: 0
+list4[0]: 5
+list4[3]: 1
+list4: 5 5 5 1 5 5 5 8 3 7 11 2 9 5 5 5
+Copying list4 to list5 using constructor.
+Removing number "5". Number of removed elements: 9
+list4: 1 8 3 7 11 2 9
+list5: 5 5 5 1 5 5 5 8 3 7 11 2 9 5 5 5
+getIndexByReference: 0
+list5: 99 5 5 5 1 5 5 5 8 3 7 11 2 9 5 5 5 99
+
+Press any key to continue . . . 

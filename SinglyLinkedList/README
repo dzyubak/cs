@@ -1,0 +1,11 @@
+SinglyLinkedList
+
+SinglyLinkedList is a Singly linked list written in C# (C Sharp).
+This project is created with SharpDevelop Version 4.3.3.9663 and .NET Version 4.0
+
+Class Diagram is saved to SinglyLinkedList.png
+
+Program output can be found in ouput.txt
+To generate this output the following command can be executed:
+_PATH_TO_\SinglyLinkedList\SinglyLinkedList\bin\Debug\SinglyLinkedList.exe > _PATH_TO_\ouput.txt
+This command will save the output to ouput.txt instead of writing the output to console (screen).
