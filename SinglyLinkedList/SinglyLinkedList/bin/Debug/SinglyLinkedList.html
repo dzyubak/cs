@@ -1,0 +1,90 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+<title>SinglyLinkedList XML documentation viewer (formatter)</title>
+
+<script>
+/**
+ * Copyright (C) 2013, 2015 Dmytro Dzyubak
+ * 
+ * This file is part of SinglyLinkedList.
+ * 
+ * SinglyLinkedList is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ * 
+ * SinglyLinkedList is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+ * GNU General Public License for more details.
+ * 
+ * You should have received a copy of the GNU General Public License
+ * along with SinglyLinkedList. If not, see <http://www.gnu.org/licenses/>.
+ */
+</script>
+
+<style type="text/css">
+body {
+	margin: 50px;
+	padding: 0;
+	background: #dddddd;
+	font-size: 100%;
+}
+
+h1 {
+	text-align:center;
+	font-size: 150;
+}
+
+h2 {
+	margin-top: 50px;
+	font-size: 130%;
+}
+
+code {
+	margin: 7px;
+	padding: 7px;
+	border-style: dashed;
+	border-width: 1px;
+	border-color: #777777;
+}
+</style>
+
+<script language="JavaScript" type="text/javascript">
+
+var SinglyLinkedList;
+
+window.onload = function() {
+	loadXmlXsl();
+}
+
+function loadXmlXsl() {
+	var xslStyle;
+	SinglyLinkedList = new ActiveXObject("MSXML2.DOMDocument");
+	SinglyLinkedList.validateOnParse=true;
+	SinglyLinkedList.async = false; // async: true (asynchronous) or false (synchronous)
+	
+	xslStyle = new ActiveXObject("MSXML2.DOMDocument");
+	xslStyle.async = false;
+	
+	SinglyLinkedList.load("SinglyLinkedList.xml");
+	if (SinglyLinkedList.parseError.errorCode != 0) {
+		alert(SinglyLinkedList.parseError.reason + SinglyLinkedList.parseError.line);
+	}
+	
+	xslStyle.load("SinglyLinkedList.xsl");
+	
+	document.all["output"].innerHTML = SinglyLinkedList.transformNode(xslStyle);
+}
+
+</script>
+</head>
+<body>
+
+<div id="output"></div>
+
+</body>
+</html>

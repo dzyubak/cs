@@ -21,7 +21,7 @@ using System;
 
 namespace SinglyLinkedList
 {
-	/// <summary>
+    /// <summary>
     /// This class describes a Singly linked list
     /// </summary>
     class List
